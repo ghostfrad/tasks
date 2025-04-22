@@ -92,7 +92,7 @@ int main() {
     ProcessedFile result1, result2;
 
     std::thread t1(processFile, "1_in.txt", std::ref(result1));
-    std::thread t2(processFile, "2_in_txt", std::ref(result2));
+    std::thread t2(processFile, "2_in.txt", std::ref(result2));
 
     t1.join();
     t2.join();
